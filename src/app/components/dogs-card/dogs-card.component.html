@@ -1,0 +1,94 @@
+
+
+
+
+
+<search-box (newSearch)="onSearch($event)"></search-box>
+<div class="row">
+  <div class="col-8 mt-5">
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+      @for (item of filteredDogList(); track $index) {
+          <h4 id="list-item-1">{{item.name}}</h4>
+          <button [routerLink]="['/primary/contact', item.name]" routerLinkActive="router-link-active"
+              type="button" class="btn btn-warning">Look</button>
+          <hr/>
+      }
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0 mt-5">
+
+
+
+    <ul>
+    @for (item of dogBreedList; track $index) {
+
+
+      <li>
+        {{item.name}}
+      </li>
+    }
+    </ul> -->
+
+          <!-- <div class="card">
+          <img [src]="dogsService.loadImagesByBreed(item.name)|async" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">Lorem ipsum dolor
+              sit amet consectetur adipisicing elit.
+              Optio quod eaque tempora incidunt quis
+              laudantium deserunt expedita dolores
+              culpa? Iure cumque repellendus natus
+              fuga deserunt, dignissimos minus aliquid
+              porro! Laboriosam?</p>
+            <a href="#" class="btn btn-primary ">Go somewhere</a>
+          </div></div> -->
+  <!-- </div> -->
+
+
+
+
+
+  <!-- <div class="col-sm-6 mt-5">
+    <div class="card">
+      <img src="https://cdn.sanity.io/images/5vm5yn1d/pro/5cb1f9400891d9da5a4926d7814bd1b89127ecba-1300x867.jpg?fm=webp&q=80" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 mt-5">
+    <div class="card">
+      <img src="https://www.semana.com/resizer/v2/INJTUCZGY5ARXAFKOOTNCI2HIY.jpg?auth=7dd4831e3169455e41f87cdfa0f0908d097744f5c1c3315853f582504f3c9578&smart=true&quality=75&width=768&height=432" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 mt-5">
+    <div class="card">
+      <img src="https://media.cnn.com/api/v1/images/stellar/prod/cnne-1361799-las-5-razas-de-perro-mas-populares-en-estados-unidos.jpeg?c=16x9&q=h_653,w_1160,c_fill/f_webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div> -->
+<!-- </div> -->
