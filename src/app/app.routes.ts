@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
+import { ProfilePageComponent } from './pages/dog-page/dog-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 
 export const routes: Routes = [
@@ -29,5 +29,9 @@ export const routes: Routes = [
         }
 
       ]
+    },
+    {
+      path: '**',
+      redirectTo: 'primary'
     }
 ];

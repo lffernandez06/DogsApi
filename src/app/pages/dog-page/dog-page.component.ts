@@ -5,8 +5,8 @@ import { DogsCardComponent } from "../../components/dogs-card/dogs-card.componen
 
 @Component({
   selector: 'profile-page',
-  imports: [SearchBoxComponent, DogsCardComponent],
-  templateUrl: './profile-page.component.html',
+  imports: [ DogsCardComponent],
+  templateUrl: './dog-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProfilePageComponent {

@@ -14,7 +14,7 @@ export interface DogModel{
 
 @Component({
   selector: 'contact-page',
-  imports: [AsyncPipe],
+  imports: [],
   templateUrl: './contact-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
