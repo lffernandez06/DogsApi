@@ -1,0 +1,1 @@
+import{Ba as n,Pa as a}from"./chunk-R2LUNO5O.js";var t=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=n({type:o,selectors:[["home-page"]],decls:1,vars:0,consts:[[1,"m-5"]],template:function(e,p){e&1&&a(0,"section",0)},encapsulation:2,changeDetection:0})};export{t as default};
